@@ -5,7 +5,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {Subscription} from "rxjs/Subscription";
 @Component({
   moduleId : module.id,
-  templateUrl : 'student-details.component.html'
+  templateUrl : 'src/app/student/student-details.component.html'
 })
 
 export class StudentDetailsComponent implements OnInit {

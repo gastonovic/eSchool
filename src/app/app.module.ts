@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {HttpModule} from "@angular/http";
-import {StudentModule} from "../student/student.module";
+import {StudentModule} from "./student/student.module";
 import {RouterModule} from "@angular/router";
 
 @NgModule({
