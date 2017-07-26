@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {HttpModule} from "@angular/http";
 import {StudentModule} from "./student/student.module";
 import {RouterModule} from "@angular/router";
+import {PaperModule} from "./paper/paper.module";
+import {MarkModule} from "./mark/mark.module";
 
 @NgModule({
   declarations: [
@@ -16,9 +18,14 @@ import {RouterModule} from "@angular/router";
       {path:'welcome',redirectTo :''}
     ]),
     HttpModule,
-    StudentModule
+    StudentModule,
+    PaperModule,
+    MarkModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: "fr-FR" },
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,16 +1,16 @@
 import {Component, OnInit} from "@angular/core";
-import {IStudent} from "./student";
+import {Student} from "./student";
 import {StudentService} from "./student.service";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Subscription} from "rxjs/Subscription";
 @Component({
   moduleId : module.id,
-  templateUrl : 'src/app/student/student-details.component.html'
+  templateUrl : './student-details.component.html'
 })
 
 export class StudentDetailsComponent implements OnInit {
 pageTitle : string = 'Informations personelles';
-student : IStudent;
+student : Student;
 private sub : Subscription;
 private errorMessage : string;
 

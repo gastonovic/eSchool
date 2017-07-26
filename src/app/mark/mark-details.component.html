@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relevé</title>
+</head>
+<table class='table'>
+  <thead>
+  <tr>
+
+    <th>Matiere</th>
+    <th>Type</th>
+    <th>Note</th>
+
+  </tr>
+  </thead>
+  <tbody>
+<tr *ngFor='let mark of marks'>
+
+
+  <td>{{mark.matieres.libelle}}</td>
+  <td>{{mark.evaluations.type}}</td>
+  <td>{{mark.note }}</td>
+
+
+</tr>
+  </tbody>
+</table>
+</html>
